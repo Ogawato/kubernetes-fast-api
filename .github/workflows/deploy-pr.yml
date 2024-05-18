@@ -6,6 +6,10 @@ on:
       - 'app/**'
       - .github/workflows/deploy-pr.yml
 
+permissions:
+    contents: read
+    packages: write
+    
 env:
   REGISTRY: ghcr.io
 
